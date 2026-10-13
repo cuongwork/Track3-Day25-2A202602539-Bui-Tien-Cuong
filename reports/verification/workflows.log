@@ -1,0 +1,2 @@
+  naive  completion_rate=1.0 worker_crashes=81 duplicate_refunds=128 duplicate_emails=81 lost_refunds=0 overpaid_cents=1496700 wasted_llm_calls=91 wasted_llm_per_crash=1.123 -> FAIL duplicate_refunds_max,duplicate_emails_max,wasted_llm_per_crash_max
+  yours  completion_rate=1.0 worker_crashes=66 duplicate_refunds=0 duplicate_emails=0 lost_refunds=0 overpaid_cents=0 wasted_llm_calls=20 wasted_llm_per_crash=0.303 -> PASS

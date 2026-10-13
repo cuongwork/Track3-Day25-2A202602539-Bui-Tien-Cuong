@@ -1,0 +1,8 @@
+
+== client: resilient
+  C1_faq_outage                resilient avail=0.8373 faq_avail=0.8424 hit=0.0 stale=0 wrong=0 outdated=0 cost/turn=1.386  -> FAIL faq_availability_min,cache_hit_ratio_min
+   0/1 tapes passed -> reports/cache/resilient.json
+
+== client: cached
+  C1_faq_outage                cached    avail=0.912 faq_avail=0.964 hit=0.652 stale=156 wrong=0 outdated=3 cost/turn=0.916  -> PASS
+   1/1 tapes passed -> reports/cache/cached.json

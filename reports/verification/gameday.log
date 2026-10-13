@@ -1,0 +1,18 @@
+
+== client: naive
+  G1_rate_limit_spike          naive     avail=0.7194 p95(s)=7.157 ampl=7.738 retry=6.738 cost/turn=2.163 recov(s)=4.0  -> FAIL availability_min,retry_after_violations_max,amplification_max
+  G2_overload_storm            naive     avail=0.456 p95(s)=15.034 ampl=9.904 retry=8.904 cost/turn=4.627 recov(s)=155.0  -> FAIL availability_min,amplification_max,recovery_s_max
+  G3_brownout                  naive     avail=1.0 p95(s)=4.768 ampl=1.164 retry=0.164 cost/turn=2.328 recov(s)=0.0  -> FAIL retry_ratio_max
+  G4_slow_region               naive     avail=1.0 p95(s)=13.764 ampl=1.004 retry=0.004 cost/turn=2.008 recov(s)=0.0  -> FAIL latency_p95_s_max
+  G5_bad_deploy_then_quota     naive     avail=0.3699 p95(s)=5.359 ampl=17.03 retry=16.03 cost/turn=2.124 recov(s)=None  -> FAIL client_error_retries_max,availability_min
+  G6_provider_outage           naive     avail=0.517 p95(s)=4.836 ampl=12.344 retry=11.344 cost/turn=2.009 recov(s)=0.0  -> FAIL availability_min
+   0/6 tapes passed -> reports/gameday/naive.json
+
+== client: resilient
+  G1_rate_limit_spike          resilient avail=1.0 p95(s)=4.817 ampl=1.06 retry=0.001 cost/turn=2.094 recov(s)=0.0  -> PASS
+  G2_overload_storm            resilient avail=1.0 p95(s)=10.023 ampl=1.035 retry=0.005 cost/turn=2.107 recov(s)=0.0  -> PASS
+  G3_brownout                  resilient avail=1.0 p95(s)=4.642 ampl=1.076 retry=0.049 cost/turn=2.167 recov(s)=0.0  -> PASS
+  G4_slow_region               resilient avail=1.0 p95(s)=5.626 ampl=1.014 retry=0.002 cost/turn=2.072 recov(s)=0.0  -> PASS
+  G5_bad_deploy_then_quota     resilient avail=0.8179 p95(s)=5.482 ampl=1.003 retry=0.002 cost/turn=2.504 recov(s)=None  -> PASS
+  G6_provider_outage           resilient avail=1.0 p95(s)=6.096 ampl=1.059 retry=0.023 cost/turn=2.188 recov(s)=0.0  -> PASS
+   6/6 tapes passed -> reports/gameday/resilient.json

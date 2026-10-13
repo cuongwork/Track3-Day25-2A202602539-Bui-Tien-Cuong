@@ -1,0 +1,76 @@
+{
+  "experiment": "tool_filter_disabled",
+  "scenario": "G6_provider_outage",
+  "seed": 25,
+  "client": "resilient",
+  "client_settings": {
+    "attempt_timeout_s": 8.0,
+    "max_attempts_per_provider": 2,
+    "min_time_left_s": 1.0,
+    "backoff_base_s": 0.25,
+    "backoff_cap_s": 4.0,
+    "retry_budget_ratio": 0.1,
+    "retry_budget_min_per_s": 0.5,
+    "retry_budget_max_tokens": 20,
+    "quota_cooldown_s": 300,
+    "breaker": {
+      "window_size": 20,
+      "min_calls": 10,
+      "failure_rate_threshold": 0.5,
+      "slow_call_s": 5.0,
+      "slow_rate_threshold": 0.6,
+      "open_duration_s": 10.0,
+      "half_open_max_probes": 2,
+      "half_open_successes": 2
+    }
+  },
+  "cache_settings": {
+    "similarity_threshold": 0.94,
+    "ttl_s": 60,
+    "max_stale_s": 180,
+    "max_entries": 500
+  },
+  "unfiltered_tool_ladder": true,
+  "metrics": {
+    "scenario": "G6_provider_outage",
+    "client": "resilient",
+    "turns": 2385,
+    "good_turns": 2155,
+    "availability": 0.9036,
+    "latency_p50_s": 3.152,
+    "latency_p95_s": 5.554,
+    "latency_p99_s": 12.103,
+    "calls": 4540,
+    "attempts": 4736,
+    "amplification": 1.043,
+    "retry_ratio": 0.006,
+    "attempts_by_provider": {
+      "alpha": 2387,
+      "alpha-eu": 78,
+      "beta": 1855,
+      "gamma-mini": 416
+    },
+    "errors_by_code": {
+      "api_error": 11,
+      "service_unavailable": 45,
+      "client_timeout": 78,
+      "rate_limit_exceeded": 62
+    },
+    "give_up_reasons": {
+      "incompatible_model_output": 230
+    },
+    "cost": 4935.4,
+    "cost_per_good_turn": 2.29,
+    "retry_after_violations": 0,
+    "client_error_retries": 0,
+    "incompatible_routes": 230,
+    "unneeded_failovers": 0,
+    "recovery_s": 0.0,
+    "primary_share_after_restore": 1.0,
+    "checks": {
+      "availability_min": false,
+      "incompatible_routes_max": false,
+      "primary_share_after_restore_min": true
+    }
+  }
+}

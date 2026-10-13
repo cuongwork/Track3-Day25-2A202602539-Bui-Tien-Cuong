@@ -1,0 +1,17 @@
+  naive    pages=7 tickets=0 false_pages=3 -> FAIL
+      {'incident': 'checkout_bug', 'expect': 'page', 'detected': True, 'delay_min': 1}
+      {'incident': 'provider_outage', 'expect': 'page', 'detected': True, 'delay_min': 0}
+      {'incident': 'deploy_blip', 'expect': 'none', 'paged': True}
+      {'incident': 'slow_leak', 'expect': 'ticket', 'detected': False, 'delay_min': None, 'paged_instead': False}
+      {'incident': 'degraded_evening', 'expect': 'page', 'detected': True, 'delay_min': 214}
+      {'incident': 'night_spike', 'expect': 'none', 'paged': True}
+      {'incident': 'small_bump', 'expect': 'none', 'paged': True}
+  burnrate pages=3 tickets=1 false_pages=0 -> PASS
+      {'incident': 'checkout_bug', 'expect': 'page', 'detected': True, 'delay_min': 27}
+      {'incident': 'provider_outage', 'expect': 'page', 'detected': True, 'delay_min': 4}
+      {'incident': 'deploy_blip', 'expect': 'none', 'paged': False}
+      {'incident': 'slow_leak', 'expect': 'ticket', 'detected': True, 'delay_min': 1337, 'paged_instead': False}
+      {'incident': 'degraded_evening', 'expect': 'page', 'detected': True, 'delay_min': 291}
+      {'incident': 'night_spike', 'expect': 'none', 'paged': False}
+      {'incident': 'small_bump', 'expect': 'none', 'paged': False}
+      budget: {'requests': 25901755, 'allowed_bad': 129508.8, 'bad': 55618, 'availability': 0.997853, 'budget_consumed': 0.4295, 'budget_remaining': 0.5705, 'freeze_releases': False}
