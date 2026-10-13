@@ -4,7 +4,7 @@
   "implementation_commit": "b2f1f0476898e4bc5f63320fe73e7f3eaa76a34d",
   "sha256": {
     "configs/gameday.yaml": "4749a237901e2dfacab5ad24fab65c61cf5c6dc47a1c5433991e9823c3d4eec7",
-    "reports/ARTIFACTS.md": "edb017c39b8cf5a32aef74fdca06e0d6db913f6f63ed24d1e9b5c94a27619685",
+    "reports/ARTIFACTS.md": "63aaf9854fdf220f3cb57d79c76a66a9b059637ce4e4d2d95261d3a9d0dbf668",
     "reports/cache/cached.json": "60699506434d6719832f95ce36e04966abc2bde896ba47ee0164be315c3cb0dc",
     "reports/cache/cached_C1_faq_outage_timeseries.csv": "dbad910b51c9a4eb0eb1dd378520f53c6a9e0f09372fe98855e4fadb29e8946c",
     "reports/cache/resilient.json": "ff8b614ed6f1682f0b0af660ac9705cbe7db954e3856cf46ba21b7231ff4ee80",
@@ -50,7 +50,7 @@
     "reports/gameday/resilient_G4_slow_region_timeseries.csv": "a19578646686cfa22e1afa57cb44fadc2c8d63487bd30c3e8ec803fb80a2e37b",
     "reports/gameday/resilient_G5_bad_deploy_then_quota_timeseries.csv": "eff8c0fa4ca332d7b8fe5a47e8e59ee47196502d0ff98ecd8b87d5bfd2d54a4d",
     "reports/gameday/resilient_G6_provider_outage_timeseries.csv": "a20056be52a9ecbc75897c26d6a4275c94a43b3bd76b07d03079c40f89b10a82",
-    "reports/REPORT.md": "293424af2b9351c9e1280ce06580f74691190ddef4535130b1ace9533bbc1587",
+    "reports/REPORT.md": "577899df0bd7aa7ed4850625cf93cc2a4e91a7a9ad8bc9b799e48cc10c7a78f9",
     "reports/REPORT_TEMPLATE.md": "2cd525bc023328f4395737c0c2fa3576d202de58b246bb700cf90e098d1c7bee",
     "reports/scoreboard.json": "72f3f8bc30d0de707d01806168bf61560c94c643bb61415fdd1cc2aff376e1c1",
     "reports/slo.json": "c2e1650184e9ce71d08ed935be3292f6778833247ba3ea42f2e0c2d72a8cb3b7",

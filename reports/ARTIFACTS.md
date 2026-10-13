@@ -3,7 +3,7 @@
 Các JSON/CSV và biểu đồ trong thư mục này được sinh bằng chương trình của lab.
 Đây là dữ liệu mô phỏng, không phải dữ liệu production hoặc ảnh chụp màn hình.
 REPORT.md đã được điền từ REPORT_TEMPLATE.md theo yêu cầu. Họ tên/MSV lấy từ tên
-thư mục; dòng Commit ghi hash của commit triển khai ngay trước commit chứa báo cáo.
+thư mục; dòng Commit ghi hash của commit hoàn tất bài ngay trước commit cập nhật dòng này.
 
 | Mục template | File nguồn |
 |---|---|
